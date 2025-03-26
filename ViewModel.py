@@ -1,30 +1,6 @@
 from Message import *
-from typing import Callable, List
 from ApiService import ApiService
 from StoryScene import StoryScene
-import json
-
-# isStory_ended = False
-# previous_messages: [Message] = []
-#
-# while not isStory_ended:
-#     response = ApiService().start_story(previous_messages=previous_messages)
-#     content = response.content
-#     # 紀錄 server response
-#     previous_messages.append(Message(role=Role.SYSTEM, content=content))
-#     print(content)
-#     json_obj = json.loads(content)
-#     isStory_ended = json_obj["isStoryEnded"]
-#     if isStory_ended:
-#         print("故事結束")
-#         break
-#
-#     select_index = input("選擇: ")
-#     select_option = json_obj["options"][int(select_index)]
-#     print("選擇了:", select_option)
-#     previous_messages.append(Message(role=Role.USER, content=select_option))
-#     print("下一幕")
-
 
 class ViewModel:
     _callbacks: list[callable(StoryScene)] = []
