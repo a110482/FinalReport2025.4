@@ -1,7 +1,5 @@
 from enum import Enum
-import json
 from openai.types.chat import ChatCompletionMessage
-from typing import Any
 
 class Role(Enum):
     SYSTEM = "system"

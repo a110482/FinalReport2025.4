@@ -1,9 +1,6 @@
-from ViewModel import ViewModel
 from StoryScene import StoryScene
 import tkinter as tk
 from ViewModel import ViewModel
-from tkinter.font import Font
-import threading
 
 class MainView:
     _view_model: ViewModel
